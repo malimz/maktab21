@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+
+
+<!-------------------------------------- NavBar ------------------------------------------>
+<div id="header">
+<div class= "fixed-header">
+   <div class="content-wrapper header-content">
+      <div class="app-title">
+         <div class="title">Welcome guest</div>
+      </div>
+      <form class="header-right-side ml-auto"  action="/panel/login" method="get"> 
+         <button type="submit" class="btn">Sign-in</button>
+      </form>
+      <form class="header-right-side"  action="panel/signup" method="get"> 
+        <button type="submit" class="btn">Sign-up</button>
+      </form>
+   </div>
+</div>
+</div>
+
+
+<!-----------------------------------------Content---------------------------------------->
+<div class="post">
+  <div class="post-wrapper">
+
+    <div class="user-info">
+        <div class="user-avatar">
+          <img src="" alt="author"/>
+        </div>
+        <div class="user-data">
+          <div class="username">
+            <p>username</p>
+          </div>
+          <div class="post-date">
+            <p>Date</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="post-content">
+      <img src="" alt=""/>
+      <div class='post-text'>
+        <p> some text a bout this post</p>    
+          /* data (image and text) is called from db and shown in these <img> and <p> tags */
+      </div>
+    </div>
+
+    <div class="post-info">
+      <div class="likes" onClick='{this.props.likeHandler}'>
+        <a href="#">
+          <div class="icon"><i class="far fa-heart"></i></div>
+          <div class="count">Count</div>
+        </a>
+      </div>
+      <div class="comments" onClick="{this.props.showComments}">
+        <a href="#">
+          <div class="icon"><i class="far fa-comment-alt"></i></div>
+          <div class="count">Count</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="comment-input">
+      <form onSubmit="{this.props.addCommentHandler}">
+        <input name="text" type="text" maxLength="200" placeholder="Write your comment here"/>
+        <button class="submit-button" type="submit"></button>
+      </form>
+    </div>
+
+    <div class="comment">
+      <div class="user-data">
+        <div class="username">
+        <p>username</p>
+        </div>
+        <div class="comment-text">
+          <p>comment body</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!----------------------------------------------->
+
+</html>
+
+
+
+
+
+
+
+
+
+// <body class="body">
+// <h1>Welcome to Article Blog </h1>
+    
+//     <a class="nav-link" class="link" href="/panel/signup">Sign Up</a>
+//     <a class="nav-link" href="/panel/login">Sign In</a>
+
+//   <section id="one" class="wrapper style2">
+
+
+
+
+//     <%articles.forEach(function(article){%>
+//       <div class="box">
+//           <img src="./images/image-Articles/<%=article.picture%>" alt="" />
+//         <div class="content">
+//           <header class="align-center">
+//             <p><%=article.title%></p>
+//             <h2><%=article.text%></h2>
+//           </header>
+//           <p>Date: <%=article.date%></p>
+//           <!-- <footer class="align-center">
+//             <a href="article/<%=article.link%>" class="button alt">Learn More</a>
+
+//           </footer> -->
+//         </div>
+//       </div>
+//     <%})%>
+
+
+//   </section>
+// </body>
+
+</html>

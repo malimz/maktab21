@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  background:  #e2e5ee;
+}
+.box {
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(-225deg, rgb(122, 141, 192) 0%, #884D80 100%);
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5), 0 5px 2px -2px rgba(0, 0, 0, 0.5), 0 5px 8px 0 rgba(0, 0, 0, 0.5)
+}
+h1{
+  color: white;
+  font-size: 25px;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+}
+h3{
+  color: white;
+  font-size: 20px;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  /* letter-spacing: 1px; */
+}
+
+#username, #pass, #email{
+  border: 4px solid #0097e6;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 45px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  transition: 250ms width ease, 250ms border-color ease;
+}
+
+#submit{
+  border: 4px solid #0097e6;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 40px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 140px;
+  font-weight: 200;
+  transition: 250ms width ease, 250ms border-color ease;
+}
+
+#submit:hover{
+  width:150px
+}
+
+#username:hover, #pass:hover, #email:hover{
+  width: 220px;
+}
+
+#username:focus, #pass:focus, #submit:focus, #email:focus{
+  width: 250px;
+  border-color: #6fb98f;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
