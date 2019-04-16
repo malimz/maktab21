@@ -34,12 +34,13 @@
 
 
 <!-----------------------------------------Content---------------------------------------->
+<%articles.forEach(function(article){%>
 <div class="post">
   <div class="post-wrapper">
 
     <div class="user-info">
         <div class="user-avatar">
-          <img src="" alt="author"/>
+          <img src="" />
         </div>
         <div class="user-data">
           <div class="username">
@@ -52,10 +53,9 @@
     </div>
 
     <div class="post-content">
-      <img src="" alt=""/>
+      <img src="../images/article-images/<%=article.picture%>"/>
       <div class='post-text'>
-        <p> some text a bout this post</p>    
-          /* data (image and text) is called from db and shown in these <img> and <p> tags */
+        <p> <%=article.text%></p>    
       </div>
     </div>
 
@@ -94,50 +94,9 @@
   </div>
 </div>
 
+<%})%>
 
 
 <!----------------------------------------------->
-
-</html>
-
-
-
-
-
-
-
-
-
-// <body class="body">
-// <h1>Welcome to Article Blog </h1>
-    
-//     <a class="nav-link" class="link" href="/panel/signup">Sign Up</a>
-//     <a class="nav-link" href="/panel/login">Sign In</a>
-
-//   <section id="one" class="wrapper style2">
-
-
-
-
-//     <%articles.forEach(function(article){%>
-//       <div class="box">
-//           <img src="./images/image-Articles/<%=article.picture%>" alt="" />
-//         <div class="content">
-//           <header class="align-center">
-//             <p><%=article.title%></p>
-//             <h2><%=article.text%></h2>
-//           </header>
-//           <p>Date: <%=article.date%></p>
-//           <!-- <footer class="align-center">
-//             <a href="article/<%=article.link%>" class="button alt">Learn More</a>
-
-//           </footer> -->
-//         </div>
-//       </div>
-//     <%})%>
-
-
-//   </section>
-// </body>
 
 </html>
