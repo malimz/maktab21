@@ -14,7 +14,6 @@ class App extends Component {
       <div className="App">
         <Router basename="/panel">
           <Switch>
-            <Route exact path="/" component={HomePage} />
             <Route path="/login" component={LoginPage} />
             <Route path="/signup" component={SignUp} />
             <PrivateRouter path="/dashboard" component={ProfilePage} />
